@@ -9,8 +9,8 @@ int main() {
   while(true){
     std::cout << "$ ";
     std::string input;
+    std::cin.ignore(5);
     std::getline(std::cin, input);
-    if(input=="exit 0")return 0;
-    std::cout<<input << ": command not found" << std::endl;
+    std::cout<< input <<std::endl;
   }
 }
